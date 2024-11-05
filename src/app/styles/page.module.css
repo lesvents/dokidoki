@@ -1,0 +1,88 @@
+#title {
+  padding-top: 75px;
+  text-align: center;
+  text-shadow: 2px 4px 8px rgb(120, 145, 145);
+  font-weight: 800;
+  font-size: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(66, 58, 64);
+  text-shadow: 40px;
+  transition: text-shadow 0.8s;
+}
+
+#title:hover {
+  text-shadow: 2px 5px 35px rgb(241, 255, 255);
+}
+
+#btn {
+  font-size: 30px;
+  font-weight: 400;
+  color: aliceblue;
+  background-color: rgb(193, 230, 235);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px 3px rgb(161, 161, 161);
+  padding: 10px 20px;
+  transition: box-shadow 0.2s, background-color 0.2s, transform 0.2s, color 0.2s;
+}
+
+#btn:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 4px 20px 6px rgb(240, 248, 230, 0.75);
+  color: rgb(255, 255, 255);
+}
+
+/* #btn :active {
+  background-color: rgba(30, 44, 46, 0.154);
+  transform: scale(0.8);
+} */
+
+#btn_container {
+  position: fixed;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#bottom_layer {
+  position: fixed;
+  top: 0; /* 确保从顶部开始 */
+  left: 0; /* 确保从左侧开始 */
+  width: 100%; /* 宽度100% */
+  height: 100%; /* 高度100% */
+  background: radial-gradient(circle, #ffebf0, #ffebd4); /* 从红色到黄色 */
+  z-index: -2; /* 确保底层在最底部 */
+}
+
+#upper_layer {
+  position: fixed;
+  top: 0; /* 确保从顶部开始 */
+  left: 0; /* 确保从左侧开始 */
+  width: 100%; /* 宽度100% */
+  height: 100%; /* 高度100% */
+  z-index: -1; /* 确保上层在上面 */
+  background: linear-gradient(
+    45deg,
+    #b2e9ff8a,
+    #ffeeb85c,
+    #d4ffda20
+  ); /* 斜向多色渐变 */
+  /* pointer-events: none; 如果你希望下面的内容可交互，可以设置为none */
+  animation: bounce 6s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,94 @@
+#division {
+  width: 400px;
+  /* height: 200px; */
+  background-color: rgb(255, 245, 198);
+  border: none;
+  box-shadow: 12px 12px 40px 10px #a6ac95;
+  border-radius: 20px;
+  /*变成横着排列*/
+  display: flex;
+  /*允许换行*/
+  flex-wrap: wrap;
+  /* 每个组件之间的间距 */
+  gap: 20px;
+  /*内边距*/
+  padding: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.5s, border-radius 0.5s;
+}
+
+#division:hover {
+  box-shadow: 0px 0px 60px 6px #80896d;
+  border-radius: 70px;
+}
+
+#division_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#division_title {
+  font-size: 30px;
+  font-weight: 600px;
+  text-shadow: 1px 2px 2px white;
+}
+
+#card {
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#headshot {
+  box-shadow: 2px 2px 20px 2px rgb(157, 158, 146);
+  width: 60px;
+  height: 60px;
+}
+
+#name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 580;
+}
+
+#name_container {
+  padding: 10px;
+}
+
+#body_container {
+  display: flex;
+  padding: 20px 80px;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+#about_container {
+  border-radius: 40px;
+  background-color: rgba(255, 255, 231, 0.394);
+  width: 500px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+#container {
+  display: flex;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  z-index: -3;
+}
+
+#about_title {
+  font-size: 30px;
+  font-weight: 540;
+  text-shadow: 3px 3px 3px rgb(215, 255, 247);
+}
+
+#letter {
+  margin: 30px;
+}
