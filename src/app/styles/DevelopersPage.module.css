@@ -90,5 +90,6 @@
 }
 
 #letter {
+  font-family: "Courier New", monospace;
   margin: 30px;
 }

@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   left: 50%;
-  background-color: #d8d8d84d; /* 可根据需要调整背景色 */
+  background-color: #d8d8d84d;
   padding: 25px 30px; /* 设置内边距 */
   text-align: center; /* 居中内容 */
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
@@ -14,4 +14,5 @@
   border-radius: 40%;
   clip-path: none;
   box-shadow: -2px -2px 30px rgba(39, 39, 39, 0.2);
+  clip-path: none;
 }
